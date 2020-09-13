@@ -79,7 +79,7 @@ class AuthorityAC extends AccessController {
         })
     }
     async getMeta() {
-        return this._db.get("meta").json_content;
+        return this._db.get("meta")[0].json_content;
     }
     /* Private methods */
     _onUpdate() {
